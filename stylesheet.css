@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.header-logo {
+    float: left;
+
+}
+
+.header-logo img {
+    text-decoration:none;
+    width: 120px;
+    height: 40px;
+    display: block;
+
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-list {
+    list-style: none;
+    display: flex;
+    
+}
+
+.flex-list li a {
+    text-decoration:none;
+    
+}
+
+
