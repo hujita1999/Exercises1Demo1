@@ -1,40 +1,172 @@
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+
+.header-logo a {
+    display: block;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 .container {
     max-width: 960px;
-    width: 100%;
+    margin: 0 auto 100px;
+    padding: 0 4%;
+    text-align: center;
+}
+
+
+
+/*ここからheader*/
+
+
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
-.header-logo img {
-    width: 120px;
-    height: 40px;
+#header ul {
+    display: flex;
+    padding: 10px 0;
 }
 
-.header-nav ul {
-    display: flex
+#header li {
+    margin-left: 30px;
+}
+
+#header li a {
+    color: #24292e;
+}
+
+#header li a:hover {
+    opacity: 0.7;
+}
+
+
+
+/*ここからmain main-visual*/
+
+#main-visual {
+    margin-bottom: 80px;
+}
+
+#main-visual img {
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+/*--ここからmain About--*/
+
+
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
+
+
+/*--ここからmain Bicycle--*/
+
+
+#bicycle ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bicycle li {
+    width: 32%;
+}
+
+
+
+/*--ここからfooter--*/
+
+
+#footer {
+    font-size: 8px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+/*--ここからスマホ用コード--*/
+
+
+@media screen and (max-width: 600px) {
+  #main-visual img {
+    height: calc(100vh - 60px);
+  }
     
+  #about .content {
+    flex-direction: column;
+  }
+
+  #about img {
+    margin-right: 0;
+  }
+
+
+  #bicycle ul {
+    flex-direction: column;
+  }
+
+  #bicycle li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
 }
-
-.header-nav a{
-    color: #24292E;
-}
-
-.flex-list {
-    list-style: none;
-}
-
-.flex-list li a {
-    text-decoration: none;
-    padding: 15px;
-    
-}
-
-
