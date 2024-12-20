@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 120px;
+    height: 40px;
+}
+
+.header-nav ul {
+    display: flex
+    
+}
+
+.header-nav a{
+    color: #24292E;
+}
+
+.flex-list {
+    list-style: none;
+}
+
+.flex-list li a {
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+
