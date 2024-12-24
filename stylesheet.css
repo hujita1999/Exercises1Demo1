@@ -9,6 +9,10 @@ body {
     font-size: 0.9rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -17,33 +21,29 @@ li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-.header-logo {
+.site-title {
     width: 120px;
     line-height: 1px;
     padding: 10px 0;
 }
 
-.header-logo a {
+.site-title a {
     display: block;
 }
 
 .section-title {
     display: inline-block;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 60px;
     border-bottom: solid 1px #383e45;
 }
 
 .content-title {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 10px 0;
 }
 
-.container {
+.wrapper {
     max-width: 960px;
     margin: 0 auto 100px;
     padding: 0 4%;
@@ -83,15 +83,16 @@ a {
 
 /*ここからmain main-visual*/
 
-#main-visual {
+#mainvisual {
     margin-bottom: 80px;
 }
 
-#main-visual img {
+#mainvisual img {
+    width: 100%;
     max-width: 1920px;
     height: 600px;
     object-fit: cover;
-    width: 100%;
+
 }
 
 
@@ -136,7 +137,7 @@ a {
 
 
 #footer {
-    font-size: 8px;
+    font-size: 0.5rem;
     padding: 10px 0;
     text-align: center;
 }
@@ -147,7 +148,8 @@ a {
 
 
 @media screen and (max-width: 600px) {
-  #main-visual img {
+
+  #mainvisual img {
     height: calc(100vh - 60px);
   }
     
